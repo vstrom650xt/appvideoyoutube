@@ -7,8 +7,8 @@ class Miapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "mi app de prueb",
+    return const MaterialApp(
+      title: "mi app de prueba",
       home: Inicio(),
     );
   }
@@ -24,6 +24,14 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text(" La Barra de arriba"),
+          centerTitle: true,
+        ),
+        body: Container(
+            child: Image.network(
+                "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-800x419.jpg"),
+            ce));
   }
 }
