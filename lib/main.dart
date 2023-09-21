@@ -29,15 +29,29 @@ class _InicioState extends State<Inicio> {
         title: const Text(" La Barra de arriba"),
         centerTitle: true,
       ),
-      body: Center(
-        child: Container(
-          width: 300, // Ancho deseado de la imagen
-          height: 300, // Alto deseado de la imagen
-          child: Image.network(
-            "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-800x419.jpg",
-            fit: BoxFit.cover, // Ajusta la imagen para cubrir el contenedor
+      body: Column(
+        children: <Widget>[
+          Container(
+            padding: const EdgeInsets.all(
+                20), // hace la img mas pequeña en funcion de la pantalla en q se vea
+            // width: 200, // Ancho deseado de la imagen
+            //   height: 200, // Alto deseado de la imagen
+            child: Image.network(
+              "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-800x419.jpg",
+              //  fit: BoxFit.cover, // Ajusta la imagen para cubrir el contenedor
+            ),
           ),
-        ),
+          Align(
+            alignment: Alignment.center,
+            child: Container(
+              child: ElevatedButton(
+                  onPressed: () {
+                    print("hola");
+                  },
+                  child: Text('Boton')),
+            ),
+          )
+        ],
       ),
     );
   }
