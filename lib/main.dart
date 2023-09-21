@@ -30,8 +30,10 @@ class _InicioState extends State<Inicio> {
           centerTitle: true,
         ),
         body: Container(
-            child: Image.network(
-                "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-800x419.jpg"),
-            ce));
+          width: 300, // Ancho deseado de la imagen
+          height: 300, // Alto deseado de la imagen
+          child: Image.network(
+              "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-800x419.jpg"),
+        ));
   }
 }
