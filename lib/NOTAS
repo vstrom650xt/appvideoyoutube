@@ -1,0 +1,8 @@
+child:
+
+    Propósito: La propiedad child se usa cuando deseas colocar un único widget como contenido en otro widget que solo puede tener un hijo.
+
+children:
+
+    Propósito: La propiedad children se usa cuando deseas colocar múltiples widgets (una lista de widgets) como contenido en un widget que puede tener varios hijos.
+    
