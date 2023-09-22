@@ -35,9 +35,9 @@ class _InicioState extends State<Inicio> {
           children: <Widget>[
             Container(
               width: MediaQuery.of(context).size.width,
-              child: Text("data"),
+              child: const Text("data1"),
             ),
-            Text("data")
+            const Text("data")
           ],
         ));
   }
